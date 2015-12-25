@@ -1,26 +1,25 @@
 # Netcogs UI Theme
 
-A Red White Smooth UI Theme for atom by Netcogs.
-
-Install from the command line:
-$ apm install netcogs-redwhite-light-ui
-
+Puff Smooth UI Theme for atom by Netcogs.
 
 Features:
 - Clean Interface Design
-- Clean Tree View
-- Smooth & Enhanced Settings Panel
-- More Focus On Elements
+- Custom Tree View
+- Enhanced Settings Panel
+- Resized Workspace Icons
+- Smooth Workspace Elements
 - Animated Tabs
 - Customized Scroll Bars
 
 
-This is our first theme for the atom editor, this is forked from atom-light-ui.
-we will keep improving this theme & surely bring more flavors & better versions of it.
+Looks great when used with [Netcogs Puff](https://github.com/netcogs/netcogs-puff-syntax) syntax theme.
 
-Looks great when used with [Netcogs RW Dark](https://github.com/netcogs/netcogs-rw-drk-syntax) syntax theme.
+All the style codes are in "custom-styles.less" for convenient style changes, some other files are disabled in "index.less" file.
+Enabling them will cause this theme to misbehave. They're been left just for reference purpose only.
 
-All the style codes are in 'custom-styles.less', some other files are disabled.
-Enabling them will cause this theme to crash. They are been left just for reference purpose.
+![](https://cloud.githubusercontent.com/assets/16263391/12003150/0d8a4ed4-ab3a-11e5-9a66-68492af2056a.png)
 
-![](https://f.cloud.github.com/assets/671378/2265022/bb148a20-9e7a-11e3-81c8-bf5965d48183.png)
+![](https://cloud.githubusercontent.com/assets/16263391/12003153/3644923a-ab3a-11e5-8d20-d4dd37d2aafe.png)
+
+All contribution, comments & feedbacks are most welcome.
+Submit any issues [ here](https://github.com/netcogs/netcogs-puff-ui/issues/new).
