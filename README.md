@@ -1,4 +1,4 @@
-# Netcogs UI Theme
+# Netcogs Puff UI Theme
 
 Puff Smooth UI Theme for atom by Netcogs.
 
