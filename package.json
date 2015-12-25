@@ -1,7 +1,7 @@
 {
   "name": "netcogs-puff-ui",
   "theme": "ui",
-  "version": "0.2.0",
+  "version": "0.1.0",
   "description": "Puff smooth ui theme for atom by Netcogs",
   "repository": "https://github.com/netcogs/netcogs-puff-ui.git",
   "license": "MIT",
