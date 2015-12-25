@@ -1,0 +1,746 @@
+/* Style Codes For Atom UI Theme
+ * Author: Ashu Pal [@pal_ashu]
+ * Url: www.netcogs.com
+ * Version: 0.1.0
+ */
+
+
+//Style codes for TEXT, HEADINGS & BADGES  --Start--
+.link, a {
+  color: @lite-peach !important;
+  transition: @animate-fast;
+  &:hover {
+    color: @grey-555 !important;
+    transition: @animate-fast;
+    }
+}
+
+.settings-view section .section-heading, .settings-view .section .section-heading  {
+  color: @peach-drk-grey !important;
+}
+
+.settings-view .sub-section .sub-section-heading {
+  color: @peach-drk-grey !important;
+}
+
+.section-heading.icon:before {
+  font-size: 32px;
+  margin-right: 28px !important;
+}
+
+.settings-view .package-readme h1, .settings-view .package-readme h2, .settings-view .package-readme h3, .settings-view .package-readme h4 {
+  color: @grey-555 !important;
+}
+
+.badge {
+  color: white !important;
+  background: @peach-highlight;
+  border-radius: 0em !important;
+
+}
+//Style codes for TEXT  --End--
+
+
+//Style codes for PANES  --Start--
+.settings-view .config-menu .nav > li > a {
+  transition: @animate;
+  color: @peach !important;
+  font-size: 18px;
+
+  &:hover {
+  color: white !important;
+  background-color: @peach !important;
+  padding-left: 35px;
+  transition: @animate-fast;
+  }
+}
+
+.settings-view .config-menu .nav > li.active > a {
+  color: @peach-drk-grey !important;
+  background-color: @vv-lite-peach !important;
+
+  &:hover {
+  color: @peach-drk-grey !important;
+  padding-left: 35px;
+  transition: @animate-fast;
+  }
+}
+
+.settings-view .config-menu {
+  background-color: @peach-drk-grey !important;
+  border: none !important;
+}
+//Style codes for PANES  --End--
+
+
+//Style codes for FORM CONTROLS  --Start--
+atom-text-editor[mini] {
+  background-color: @peach-drk-grey;
+  opacity: 1 !important;
+  overflow: hidden;
+  min-height: 45px;
+  line-height: 40px;
+  font-size: 14px;
+  transition: @animate;
+}
+
+atom-text-editor[mini].is-focused {
+  background-color: white;
+  opacity: 1 !important;
+  overflow: hidden;
+  transition: @animate;
+}
+
+.form-control {
+  border-radius: 0px !important;
+  height: 42px;
+}
+
+.settings-view select.form-control {
+    color: white;
+    border: 1px solid @peach-drk-grey !important;
+    background-color: @peach-drk-grey;
+    transition: @animate-fast;
+
+    &:hover, &:focus {
+      color: @grey-777;
+      background-color: white;
+      border: 1px solid @peach-vv-lite-grey !important;
+      transition: @animate-fast;
+    }
+}
+
+.settings-view select.form-control option {
+    -webkit-appearance: none;
+    color: @grey-444 !important;
+    background: @vry-lite-peach !important;
+    transition: @animate;
+  }
+
+.settings-view select.form-control option:hover {
+      background-color: @lite-peach !important;
+      box-shadow: 1px 1px 11px #333 !important;
+      -webkit-box-shadow: 0 0 10px 10px #333 inset !important;
+      //transition: @animate;
+    }
+
+.settings-view select.form-control option:checked {
+      background-color: @peach-vv-lite-grey !important;
+      transition: @animate;
+    }
+//Style codes for FORM CONTROLS  --End--
+
+
+//Style codes for TREE VIEW leftside , the original file is disabled --Start--
+.tree-view {
+	font-size: 12px;
+	.selected:before {
+		background: @peach-lite-grey !important;
+    transition: @animate;
+	}
+}
+
+.list-tree li.list-nested-item > .list-item  {
+color: @grey-666 !important;
+}
+
+.list-tree li.list-nested-item.selected > .list-item {
+color: white !important;
+}
+
+.list-tree li:not(.list-nested-item).selected {
+	color: @vry-lite-peach !important;
+}
+
+.list-tree li:not(.list-nested-item).status-ignored {
+  color: @grey-555 !important;
+}
+
+.tree-view-resizer {
+	.tree-view-resize-handle {
+		width: 12px;
+	}
+}
+
+.focusable-panel {
+	  opacity: 1;
+	  background: white;
+    border: none !important;
+
+	&:focus {
+	.selected:before {
+    background: @peach !important; // Selected Red Background
+    border: none !important;
+    transition: @animate;
+		}
+	}
+}
+//Style codes for TREE VIEW leftside  --End--
+
+
+//Style codes for atom SCROLLBARS  --Start--
+.scrollbars-visible-always {
+  /deep/ ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: white;
+    border-radius: 0px;
+  }
+
+  ::-webkit-scrollbar-track-piece {
+    //background-color: rgba(255,255,255,0.1) !important;
+    -webkit-box-shadow: inset 0 0 3px 0.5px rgba(0,0,0,0.3);
+    border-radius: 0px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+      background-color: @grey-666 !important;
+      border-radius: 0px;
+  }
+
+  ::-webkit-scrollbar-corner {
+    background-color: @grey-666 !important;
+  }
+
+}
+
+.settings-view .panels  {
+  /deep/ ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    -webkit-overflow-scrolling: touch;
+    overflow-y: hidden;
+  }
+
+  ::-webkit-scrollbar-track {
+      //width: 2px !important;
+      //background-color: white !important;
+      -webkit-box-shadow: inset 0 0 3px 0.6px rgba(0,0,0,0.4);
+      border-radius: 0px;
+    }
+
+  ::-webkit-scrollbar-thumb {
+        background-color: @peach-lite-grey !important;
+        border-radius: 0px;
+    }
+
+  ::-webkit-scrollbar-corner {
+      background-color: @peach-lite-grey !important;
+    }
+
+}
+
+.panes {
+  /deep/ ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+      //width: 2px !important;
+      background-color: transparent !important;
+      //-webkit-box-shadow: inset 0 0 3px 0.6px rgba(0,0,0,0.5) !important;
+      border-radius: 0px;
+    }
+
+    ::-webkit-scrollbar-track-piece {
+      //background-color: rgba(255,255,255,0.1) !important;
+      -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.4);
+      border-radius: 0px;
+    }
+
+  ::-webkit-scrollbar-thumb {
+        background-color: @peach-vv-lite-grey !important;
+        border-radius: 0px;
+    }
+
+  ::-webkit-scrollbar-corner {
+      background-color: @peach-vv-lite-grey !important;
+    }
+}
+
+//Style codes for atom SCROLLBARS  --End--
+
+
+//Style codes for atom WORKSPACE MAIN  --Start--
+atom-workspace {
+  background: white;
+  border-top: 0px !important;
+}
+atom-panel-container.left {
+  margin-right: 5px;
+  border: 0px;
+}
+atom-panel.left, .tool-panel.left, atom-panel.panel-left, .tool-panel.panel-left {
+  border: none !important;
+}
+
+atom-panel.right, .tool-panel.right, atom-panel.panel-right, .tool-panel.panel-right {
+  border-left: 6px solid @grey-444;
+}
+//Style codes for atom WORKSPACE MAIN  --End--
+
+
+//Style codes for WORKSPACE RIGHT DESCRIPTION BOX  --Start--
+.settings-view .package-card {
+  background-color: @peach-drk-grey !important;
+  border-radius: 0px;
+  transition: @animate;
+  .card-name a {
+    color: white !important;
+    text-transform: capitalize;
+    font-weight: bold;
+    transition: @animate;
+  }
+  .meta .meta-user .author {
+    color: @peach-highlight !important;
+    transition: @animate;
+    }
+  .package-description {
+    color: @grey-777 !important;
+    transition: @animate;
+    }
+  .stats .stats-item {
+    color: @peach-highlight;
+    transition: @animate;
+    }
+
+  &:hover {
+    background-color: @lite-peach !important;
+    border-radius: 0px;
+    transition: @animate;
+  .card-name a {
+    color: @grey-444 !important;
+    font-weight: bold;
+    transition: @animate;
+    }
+  .meta .meta-user .author {
+    color: white !important;
+    transition: @animate;
+    }
+  .package-description {
+    color: @vry-lite-peach !important;
+    transition: @animate;
+    }
+  .stats .stats-item {
+    color: @grey-444 !important;
+    transition: @animate;
+    }
+  }
+}
+.settings-view .package-card .stats .stats-item .icon {
+  color: white;
+}
+//Style codes for WORKSPACE RIGHT DESCRIPTION BOX  --End--
+
+
+//Style codes for BUTTONS  --Start--
+
+.btn-background (@color, @hover-color, @selected-color, @border-color, @text-color, @text-color-hover) {
+  color: @peach-lite-grey;
+  background-color: white;
+
+  &:hover {
+    color: @grey-777;
+  }
+  &:active,
+  &.selected:hover:active {
+    background-color: white;
+  }
+  &.selected,
+  &.selected:hover {
+    color: white;
+    background-color: @grey-555;
+    height: 45px;
+    transition: @animate;
+  }
+  &.selected:hover {
+    color: @grey-777;
+    background-color: @grey-666;
+    transition: @animate;
+  }
+}
+
+.btn-group > .btn {
+  color: @grey-444;
+  height: 45px;
+  border: 1px solid #bbb !important;
+  transition: @animate;
+  text-decoration: none;
+
+  &:hover {
+    color: @grey-777;
+    transition: all 0.4s ease;
+  }
+
+  &.selected,
+  &.selected:hover {
+    color: @peach-vv-lite-grey;
+    border: none !important;
+    background-color: @peach;
+    height: 45px;
+    text-decoration: none;
+    transition: all 0.4s ease;
+  }
+  &.selected:hover {
+    color: @peach-vv-lite-grey;
+    border: none !important;
+  }
+}
+
+.settings-view .config-menu .button-area { // 'Open Config Folder' button
+  margin-top: 30px;
+  border-top: 1px solid @grey-444;
+}
+.settings-view .config-menu .button-area > .btn {
+  margin-top: 20px;
+  font-size: 12px;
+  color: @peach-drk-grey;
+  height: 45px;
+  transition: @animate;
+  &:hover {
+    color: @grey-777;
+    transition: @animate;
+  }
+}
+
+.settings-view .btn-wrap-group .btn:hover {
+  color: @peach-vv-lite-grey;
+  transition: all 0.4s ease;
+}
+//Style codes for BUTTONS  --End--
+
+//Style codes for COMMAND PALETTE  --Start--
+.overlay.from-top, atom-panel.modal {
+  background-color: @vry-lite-peach;
+  top: 200px;
+  border-radius: 0px !important;
+  position: absolute;
+  box-shadow: none !important;
+  border: 1px solid @peach-vv-lite-grey;
+}
+
+atom-panel.modal .select-list ol.list-group, .overlay .select-list ol.list-group li {
+  border-top: 1px solid @peach-vv-lite-grey !important;
+  border-left: 1px solid @peach-vv-lite-grey !important;
+  border-right: 1px solid @peach-vv-lite-grey !important;
+.event.selected {
+  color: white;
+    .key-binding {
+      color: @peach-lite-grey;
+      background-color: white;
+      //border: 1px solid @peach-lite-grey;
+      }
+  }
+}
+
+//.overlay .select-list ol.list-group li.event.selected
+
+.overlay  {
+  /deep/ ::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: white;
+    border-radius: 0px;
+  }
+
+  ::-webkit-scrollbar-track-piece {
+    //background-color: rgba(255,255,255,0.1) !important;
+    -webkit-box-shadow: inset 0 0 2px 0.3px rgba(0,0,0,0.4);
+    border-radius: 0px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+      background-color: @grey-666 !important;
+      border-radius: 0px;
+  }
+
+  ::-webkit-scrollbar-corner {
+    background-color: @grey-666 !important;
+  }
+}
+//Style codes for COMMAND PALETTE  --End--
+
+//Style codes for ATOM ABOUT PAGE  --Start--
+.about .about-header .about-logo {
+  color: @grey-555;
+}
+
+.about .about-note {
+  color: @grey-666;
+  a {
+    color: @peach;
+    transition: @animate;
+
+    &:hover {
+      color: white;
+      transition: @animate;
+    }
+  }
+}
+
+.about .about-credits {
+  color: @grey-666;
+  a {
+    color: @peach;
+    transition: @animate;
+
+    &:hover {
+      color: white;
+      transition: @animate;
+    }
+  }
+}
+
+.about .about-actions .btn-group .btn {
+  background-color: white;
+  color: @grey-666;
+  &:hover {
+    background-color: @peach;
+    color: white;
+  }
+}
+//Style codes for ATOM ABOUT PAGE  --Start--
+
+
+//Style codes for SEARCH & ALERT MESSAGES  --Start--
+.settings-view .alert-info {
+  color: white;
+  border-radius: 2px;
+  border: none !important;
+  border-color: transparent !important;
+  background-color: @peach-highlight;
+}
+
+.settings-view .alert-error, .settings-view .alert-danger {
+  color: white;
+  border-radius: 2px;
+  border: none !important;
+  border-color: transparent !important;
+  background-color: @peach;
+}
+//Style codes for SEARCH & ALERT MESSAGES  --End--
+
+
+//Style codes for TABS , the original file is disabled --Start--
+@tab-font-size: 14px;
+@tab-text-color: @grey-555;
+@tab-top-padding: 0px;
+@tab-bottom-border-height: 7px;
+@tab-border: 1px solid @tab-border-color;
+@tab-border-active: 1px solid @peach;
+@tab-max-width: 200px;
+@modified-icon-width: 12px;
+
+.tab-bar {
+  height: (@tab-height + @tab-top-padding + @tab-bottom-border-height) - 1px;
+  padding: 0px;
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: @tab-bottom-border-height;
+    left: 0;
+    right: 0;
+    background-color: @peach !important;
+    border-bottom: 1px solid @peach;
+    border-top: 1px solid @tab-border-color;
+    pointer-events: none;
+  }
+
+  .tab {
+    position: relative;
+    top: @tab-top-padding;
+    max-width: @tab-max-width;
+    height: @tab-height;
+    line-height: @tab-height;
+    color: @tab-text-color;
+    padding: 0;
+    margin: 0 20px 0 5px;
+    font-size: @tab-font-size;
+    text-align: center;
+    transition: @animate;
+
+    &, &:before, &:after {
+      background: @vry-lite-peach;
+      border-top: @tab-border;
+      }
+
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      top: -1px;
+      width: 25px;
+      height: @tab-height;
+      }
+
+    &:before {
+      left: -14px;
+      border-left: @tab-border;
+      }
+
+    &:after {
+      right: -14px;
+      border-right: @tab-border;
+      }
+
+    .close-icon {
+      right: 0;
+      z-index: 3;
+      text-align: right;
+      top: -1px;
+      transition: @animate-fast;
+      transform: scale(0,0);
+      transform-origin: 50% 50%;
+      }
+
+    &.modified .close-icon {
+      right: 0px !important;
+      width: 9px !important;
+      height: 9px !important;
+      top: @tab-height/2 - @modified-icon-width/2 + 2px !important;
+      border: 2px solid @lite-peach !important;
+      border-radius: 12px;
+      transform: scale(1,1) !important;
+      transform-origin: 50% 50% !important;
+      transition: @animate-fast;
+      &:after, &:before {
+        display: none;
+       }
+      }
+
+    &.modified:hover {
+      .close-icon {
+        transform: scale(0,0) !important;
+        transform-origin: 50% 50% !important;
+        transition: @animate-fast;
+        }
+      }
+
+    &.modified.active .close-icon {
+      right: 0px !important;
+      width: 9px;
+      height: 9px;
+      top: @tab-height/2 - @modified-icon-width/2 + 2px !important;
+      border: 2px solid white !important;
+      border-radius: 12px;
+      transform: scale(1,1) !important;
+      transform-origin: 50% 50% !important;
+      transition: @animate-fast;
+      &:after, &:before {
+        display: none;
+       }
+      }
+
+    &.modified.active:hover {
+      .close-icon {
+        transform: scale(0,0) !important;
+        transform-origin: 50% 50% !important;
+        transition: @animate-fast;
+       }
+      }
+
+    &:hover {
+      color: @peach;
+      transition: @animate;
+      .close-icon {
+      right: 0;
+      z-index: 3;
+      text-align: right;
+      top: -1px;
+      transform: scale(1.1,1.1);
+      color: @tab-text-color;
+        &:hover {
+          color: @peach;
+          }
+        }
+      }
+
+  .title {
+      position: relative;
+      z-index: 1;
+      padding-right: 10px
+      }
+  }
+
+  .tab.active {
+    z-index: 1;
+    color: white;
+    transition: @animate;
+
+    .close-icon {
+      line-height: @tab-height;
+      color: white;
+      &:hover {
+        color: white !important;
+        }
+      }
+
+    &, &:before, &:after {
+      background: @peach;
+      height: @tab-height;
+      box-shadow: none;
+      border-top: @tab-border-active;
+      border-left: @tab-border-active;
+      border-right: @tab-border-active;
+      }
+  }
+}
+//Style codes for TABS  --End--
+
+//Style codes for FIND & REPLACE  --Start--
+.find-and-replace, .project-find {
+  background-color: @lite-peach !important;
+  border: 0px !important;
+  .header{
+    text-shadow: none !important;
+    font-weight: bold;
+    color: @grey-444 !important;
+}
+    .description .subtle-info-message {
+      text-shadow: none !important;
+      font-weight: normal;
+      font-style: italic;
+      color: white !important;
+    }
+    .options-label {
+      text-shadow: none !important;
+      font-weight: bold;
+      color: @grey-444 !important;
+      .options {
+        color: white !important;
+        font-weight: normal;
+        font-style: italic;
+      }
+    }
+}
+
+.find-and-replace .editor-container atom-text-editor, .project-find .editor-container atom-text-editor {
+  text-shadow: none !important;
+  border: 0px !important;
+  border-radius: 0px !important;
+}
+//Style codes for FIND & REPLACE --End--
+
+//Style codes for STATUS BAR --Start--
+.status-bar {
+  .status-bar-left {
+    text-shadow: none !important;
+    }
+  .status-bar-right {
+    text-shadow: none !important;
+  }
+}
+//Style codes for STATUS BAR --End--
